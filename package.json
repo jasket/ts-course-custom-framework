@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "name": "ts-course-custom-framework",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:parcel": "parcel index.html",
+    "start:db": "json-server -w db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//jasket/ts-course-custom-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.6.0",
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3",
+    "parcel": "^2.0.0-beta.2",
+    "prettier": "^2.3.0"
+  }
+}
