@@ -1,9 +1,17 @@
+import { UserEdit } from "./views/UserEdit";
 import { User } from "./models/User";
 
-const users = User.buildUserCollection();
+const parent = document.getElementById("root");
 
-users.on("change", () => {
-  console.log("User was changed");
-});
+if (parent) {
+  const userEdit = new UserEdit(
+    parent,
+    User.buildUser({ name: "Name", age: 20 })
+  );
 
-users.fetch();
+  userEdit.render();
+
+  console.log(userEdit);
+} else {
+  throw Error("Render error");
+}
